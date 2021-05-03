@@ -24,6 +24,6 @@ $router->put('/models/{id}', 'GeneralController@UpdateDQCModels');
 $router->put('/dqc84/{id}', 'GeneralController@UpdateDQC84');
 $router->put('/dqc841/{id}', 'GeneralController@UpdateDQC841');
 $router->delete('/models/{id}', 'GeneralController@DeleteDQCModels');
-$router->delete('/dqc84/{id}', 'GeneralController@DeletDQC84');
+$router->delete('/dqc84/{id}', 'GeneralController@DeleteDQC84');
 $router->delete('/dqc841/{id}', 'GeneralController@DeleteDQC841');
 $router->post('/generate', 'GeneralController@Generate');

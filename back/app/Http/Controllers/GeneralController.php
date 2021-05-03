@@ -148,23 +148,23 @@ class GeneralController extends BaseController
     }
     return response()->json(["mensagem" => "modelo $id exluido com sucesso", "data" => $DqcModel]);
   }
-  public function DeleteDQC84()
+  public function DeleteDQC84($id)
   {
     try {
-      $Dqc84 = Dqc84::Read();
+      $Dqc84 = Dqc84::where('ID', $id)->delete();
     } catch (Exception $e) {
       return response()->json(["mensagem" => $e], 502);
     }
-    return response()->json(["mensagem" => "models resgatados com sucesso", "data" => $Dqc84]);
+    return response()->json(["mensagem" => "dqc84 deletado com sucesso", "data" => $Dqc84]);
   }
-  public function DeleteDQC841()
+  public function DeleteDQC841($id)
   {
     try {
-      $Dqc841 = Dqc841::Read();
+      $Dqc841 = Dqc841::where('ID', $id)->delete();
     } catch (Exception $e) {
       return response()->json(["mensagem" => $e], 502);
     }
-    return response()->json(["mensagem" => "models resgatados com sucesso", "data" => $Dqc841]);
+    return response()->json(["mensagem" => "dqc841 deletado com sucesso", "data" => $Dqc841]);
   }
 
   public function Generate(Request $request)

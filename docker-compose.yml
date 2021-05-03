@@ -1,0 +1,51 @@
+version: '2'
+services:
+
+  # The Web Server
+  web:
+    build:
+      context: ./back
+      dockerfile: web.dockerfile
+    working_dir: /var/www/back/
+    volumes_from:
+      - app
+    links: 
+      - database
+      - app
+    ports:
+      - 8080:80
+    depends_on:
+      - app
+
+  # The Application
+  app:
+    build:
+      context: ./back
+      dockerfile: app.dockerfile
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+
+  # The Database
+  database:
+    image: mysql:5.7
+    command: mysqld --sql_mode=""
+    volumes:
+      - ./lumen:/var/lib/mysql
+    environment:
+      - "MYSQL_ROOT_PASSWORD=lumen"
+      - "MYSQL_DATABASE=lumen"
+      - "MYSQL_USER=lumen"
+    ports:
+        - "3399:3306"
+  vue:
+    build:
+        context: "front/"
+    image: vue-app
+    env_file:
+        - "./front/.env"
+    ports:
+        - 5001:3000
+
+volumes:
+  dbdata:  
