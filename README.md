@@ -2,7 +2,7 @@
 ## observaçôes:
 ### 1-Projeto requisitado  pela cal-comp
 ### 2-Configure o  back/.env passando as configurações do banco de dados
-### 3-Se você preferir não executar os sqls das tabelas você pode apenas digitar  no seu terminal ja dentro da pasta back php artisan migrate
+### 3-Se você preferir não executar os sqls das tabelas(O sql do banco é necessario) você pode apenas digitar  no seu terminal ja dentro da pasta back php artisan migrate
 ## como instalar o node e rodar o vue:
 ### 1- primeiro você tera q instalar o node link:https://nodejs.org/en/download (baixe de acordo com seu sistema operacional)
 ### 2- Com o node instalado você tera que executar 2 comandos
