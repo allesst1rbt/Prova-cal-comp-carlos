@@ -3,7 +3,7 @@
 ### 1-Projeto requisitado  pela cal-comp
 ### 2-Crie o  back/.env passando as configurações  presentes no back/.env.example
 # Ultilizando com o docker:
-##Instalando o docker:
+## Instalando o docker:
 ### Windows:
 #### 1-Primeiro instale o wsl na sua maquina https://docs.microsoft.com/pt-br/windows/wsl/install-win10
 #### 2-Segundo  instale o docker na sua maquina https://docs.docker.com/engine/install/
