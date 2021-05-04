@@ -6,7 +6,6 @@ RUN docker-php-ext-enable mcrypt
 
 RUN docker-php-ext-install gd  tokenizer xml pdo mbstring pdo_mysql
 
-RUN chmod -R 777 .
 COPY ./docker-php-entrypoint /usr/local/bin/docker-php-entrypoint
 RUN chmod +x /usr/local/bin/docker-php-entrypoint
 
