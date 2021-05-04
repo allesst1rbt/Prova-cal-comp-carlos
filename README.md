@@ -15,4 +15,5 @@
 ### 1-Adentre a pasta principal pelo terminal e digite docker-compose up -d --build, com isso tanto o back quanto o front seram startados
 ### 2-Eu bindei o vue no http://localhost:5001/
 ### 3-A api foi bindada no http://localhost:8080/
-### 4-O mysql foi colocado na porta 3099
+### 4-Para subir as tabelas caso elas não tenham subido você tera q derrubar o docker -> docker-compose down , e subilo de novo -> docker-compose up -d
+### 5-O mysql foi colocado na porta 3099
