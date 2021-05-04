@@ -2,6 +2,7 @@
 cd /var/www/back
 cp .env.example .env
 chmod -R 777 storage
+composer install
 php artisan migrate
 set -e
 

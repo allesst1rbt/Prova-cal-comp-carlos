@@ -171,9 +171,9 @@ class GeneralController extends BaseController
   {
     try {
       if ($request->email) {
-        Dqc841::SendEmailReport($request->email);
+        DqcModel::SendEmailReport($request->email);
       } else {
-        return response()->json(["mensagem" => "Dados para o relatorio", "data" => Dqc841::GetDataToReport()]);
+        return response()->json(["mensagem" => "Dados para o relatorio", "data" => DqcModel::GetDataToReport()]);
       }
     } catch (Exception $e) {
       return response()->json(["mensagem" => $e], 502);
