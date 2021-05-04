@@ -8,6 +8,7 @@ RUN docker-php-ext-install gd  tokenizer xml pdo mbstring pdo_mysql
 
 
 COPY ./docker-php-entrypoint /usr/local/bin/docker-php-entrypoint
+RUN chmod +x /usr/local/bin/docker-php-entrypoint
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
