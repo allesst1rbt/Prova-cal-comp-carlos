@@ -1,7 +1,7 @@
 # Prova-cal-comp-carlos
 ## observaçôes:
 ### 1-Projeto requisitado  pela cal-comp
-### 2-Tenha o docker instalado, se não tiver caso queira siga os passos abaixo
+### 2-Tenha o docker instalado, se não tiver e caso queira siga os passos abaixo
 # Ultilizando com o docker:
 ## Instalando o docker:
 ### Windows:
