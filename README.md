@@ -14,3 +14,6 @@
 # Ultilizando a aplicação:
 ### 1-Como mencionado acima crie o .env dentro da pasta back e copie as informações do .env.example para ele 
 ### 2-Adentre a pasta principal pelo terminal e digite docker-compose up -d --build, com isso tanto o back quanto o front seram startados
+### 3-Eu bindei o vue no http://localhost:5001/
+### 4-A api foi bindada no http://localhost:8080/
+### 5-O mysql foi colocado na porta 3099
