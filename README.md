@@ -14,4 +14,3 @@
 # Ultilizando a aplicação:
 ### 1-Como mencionado acima crie o .env dentro da pasta back e copie as informações do .env.example para ele 
 ### 2-Adentre a pasta principal pelo terminal e digite docker-compose up -d --build, com isso tanto o back quanto o front seram startados
-### 3-Faça as migrations da tabela caso você não queira executar o sql da pasta DUMP, docker exec -it prova-cal-comp-carlos_app_1 php artisan migrate
