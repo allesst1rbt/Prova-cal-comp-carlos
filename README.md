@@ -1,17 +1,16 @@
 # Prova-cal-comp-carlos
 ## observaçôes:
 ### 1-Projeto requisitado  pela cal-comp
-### 2-Configure o  back/.env passando as configurações do banco de dados
-### 3-Se você preferir não executar os sqls das tabelas(O sql do banco é necessario) você pode apenas digitar  no seu terminal ja dentro da pasta back php artisan migrate
-## como instalar o node e rodar o vue:
-### 1- primeiro você tera q instalar o node link:https://nodejs.org/en/download (baixe de acordo com seu sistema operacional)
-### 2- Com o node instalado você tera que executar 2 comandos
-#### -npm install
-#### -npm run serve
-### 3-Com isso você ja estará com o front rodando
-## como instalar o lumen:
-### 1- primeiro você tera q instalar o php com uma versão acima da 7.3 caso você não tenha ele  link:https://www.php.net/manual/pt_BR/install.php (baixe de acordo com seu sistema operacional)
-### 2- crie um .env e copie do .env.example as informações, em seguida configure sua conexão com o banco de dados 
-### 3- Com o php instalado basta apenas você executar o seguinte comandos
-#### -php -S localhost:8000 -t public
-### 4-Com isso você ja estará com o back rodando e poderá iniciar os testes
+### 2-Crie o  back/.env passando as configurações  presentes no back/.env.example
+# Ultilizando com o docker:
+##Instalando o docker:
+### Windows:
+#### 1-Primeiro instale o wsl na sua maquina https://docs.microsoft.com/pt-br/windows/wsl/install-win10
+#### 2-Segundo  instale o docker na sua maquina https://docs.docker.com/engine/install/
+### Unbutu:
+#### 1-https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-pt
+### Manjaro:
+#### 1-https://linuxconfig.org/manjaro-linux-docker-installation
+# Ultilizando a aplicação:
+### 1-Como mencionado acima crie o .env dentro da pasta back e copie as informações do .env.example para ele 
+### 2-Adentre a pasta principal pelo terminal e digite docker-compose up -d --build, com isso tanto o back quanto o front seram startados
